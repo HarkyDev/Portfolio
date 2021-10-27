@@ -1,4 +1,5 @@
 /* colour variables 
+maybe define border pxs 
 mobile px 768px */
 
 :root {
@@ -6,8 +7,12 @@ mobile px 768px */
     --color-Blue: blue;
 }
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
 body {
-    background-color: var(--color-White);
+    background-color: yellow
 }
 .navbar {
     background-color: magenta;
@@ -28,8 +33,13 @@ body {
     background-color: red;
 }
 
+h2 {
+    text-transform: uppercase;
+   text-align: center;
+}
 .flex-container{
     margin: 0 20px;
+    margin-bottom: 0px;
     color: white;
     background-color: black;
     display: flex;
@@ -45,38 +55,59 @@ body {
     flex: 1;
     align-self: baseline;
 }
+.sidebar p{
+    padding: 5px 25px;
+}
 .content-main{
     background-color: green;
     flex: 3;
+    
   
 }
-
-@media screen and (max-width: 768px) {
-   .flex-container {
-       flex-direction: column;
-   }
-    .content-main {
-     
-    }
-    .sidebar {
-     
-    }
-
-    }
 
 .article-one {
 background-color: magenta;
 display: flex;
 justify-content: center;
 padding: 10px;
+margin: 0px;
 }
+
+.content-lower-main {
+    display: flex;
+    background-color: black;
+    jus
+    
+}
+.article-two {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    flex: 1;
+   
+    }
+
+    /* works but needs a media query to smoothen the padding on either side if I cant centre from "content-lower-main*/
+    /* this code works but is wrong it needs to be reactively spliting the lines when they can not occupy the width needed
+     rather than share 50% all the time*/
+.article-three {
+     background-color: red;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    flex: 1;    
+        }
+
+
 .image-one  {
     position: relative;
     padding: 0px;
     border: 8px solid blue;
     align-self: base;
-    height: 260px;
-    width: 90%;
+    max-height: 200px;
+    min-height: 180px;
+    width: 94%;
 }
 
 .article-about {
@@ -89,6 +120,72 @@ padding: 10px;
     width: 70%;
     border: 8px solid blue;
     border-radius: 400px;
+}
+
+.contact-me{
     
+    display: flex;
+    flex-wrap: wrap;
+    background-color: purple;
+    margin: 0px;
+    justify-content: center;
+}
+.contact-me h2{
+    text-align: center;
+    width: 25;
+    position: relative;
+    align-self: center;
+    margin: 10px 0
+    
+}
+.contact-me ul{
+    position: relative;
+    left: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+.contact-me li{
+    background-color: blue;
+    margin: 3px;
+    list-style: none;
+    flex: 1 0 33%;
+    text-align: center;
+    
+
+
+}
+/* media query kept at bottom due to css parsing order */
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+     .content-main {
+      
+     }
+     .sidebar {
+      
+     }
+     .profilePic{
+         
+         width: 40%;
+         border: 8px solid blue;
+         border-radius: 400px;
+    }
+    .contact-me {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .contact-me li{
+        background-color: blue;
+        margin: 3px;
+        list-style: none;
+        flex: 1 0 100%;
+        text-align: center;
+        
 
 }

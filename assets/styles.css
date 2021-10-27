@@ -1,0 +1,72 @@
+/* colour variables */
+
+:root {
+    --color-White: rgb(255, 255, 255);
+    --color-Blue: blue;
+}
+
+body {
+    background-color: var(--color-White);
+}
+.navbar {
+    background-color: magenta;
+    margin: 0px;
+
+}
+.splash-container {
+    background-color: green;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+.splash-container .float-left {
+    background-color: black;
+    display: inline
+}
+.splash-container .float-right {
+    background-color: red;
+}
+
+.flex-container{
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+
+ @media (max-width:600px ) {
+   .flex-container {
+       flex-direction: column;
+   }
+
+    }
+
+
+.sidebar{
+    background-color: red;
+    flex: 0 0 700px;
+    align-self: baseline;
+}
+.content-main{
+    background-color: green;
+    flex: 1;
+    align-self: baseline;
+}
+
+.article-one {
+background-color: magenta;
+display: flex;
+justify-content: center;
+}
+.image-one  {
+    position: relative;
+    padding: 0px;
+    border: solid blue;
+    align-self: base;
+    height: 200px;
+    width: 800px;
+}

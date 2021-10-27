@@ -104,13 +104,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-.content-lower-main{
-    display: flex;
-    flex: 1 0 50%;
-}
-
-
-
 .sidebar{
     background-color: red;
     flex: 1;
@@ -139,6 +132,7 @@ margin: 0px;
     display: flex;
     background-color: black;
     flex-wrap: wrap;
+    width: 100%;
 
 
     
@@ -148,8 +142,8 @@ margin: 0px;
     display: flex;
     justify-content: center;
     padding-left: 30px;
-    flex: 1;
-   
+    flex: 1 0 50%;
+    flex-wrap: wrap;
     }
 
     /* works but needs a media query to smoothen the padding on either side if I cant centre from "content-lower-main*/
@@ -180,12 +174,10 @@ margin: 0px;
     position: relative;
     padding: 0px;
     border: 8px solid blue;
-    align-self: base;
     max-height: 400px;
-    flex: 1  35%;
-    margin: 10PX;
-    
-   
+    width: 45%;
+    flex:  1 1 45% ;
+    margin: 10px;
 }
 
 .article-about {
@@ -241,7 +233,10 @@ margin: 0px;
 }
 /* media query kept at bottom due to css parsing order */
 /* mobile */
+
+
 @media screen and (max-width: 768px) {
+   
     .flex-container {
         flex-direction: column;
     }

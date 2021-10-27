@@ -1,4 +1,5 @@
-/* colour variables */
+/* colour variables 
+mobile px 768px */
 
 :root {
     --color-White: rgb(255, 255, 255);
@@ -29,44 +30,65 @@ body {
 
 .flex-container{
     margin: 0 20px;
-    align-items: center;
-    justify-content: center;
     color: white;
     background-color: black;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
- @media (max-width:600px ) {
-   .flex-container {
-       flex-direction: column;
-   }
 
-    }
 
 
 .sidebar{
     background-color: red;
-    flex: 0 0 700px;
+    flex: 1;
     align-self: baseline;
 }
 .content-main{
     background-color: green;
-    flex: 1;
-    align-self: baseline;
+    flex: 3;
+  
 }
+
+@media screen and (max-width: 768px) {
+   .flex-container {
+       flex-direction: column;
+   }
+    .content-main {
+     
+    }
+    .sidebar {
+     
+    }
+
+    }
 
 .article-one {
 background-color: magenta;
 display: flex;
 justify-content: center;
+padding: 10px;
 }
 .image-one  {
     position: relative;
     padding: 0px;
-    border: solid blue;
+    border: 8px solid blue;
     align-self: base;
-    height: 200px;
-    width: 800px;
+    height: 260px;
+    width: 90%;
+}
+
+.article-about {
+    text-align: center;
+    background-color: yellow;
+    
+}
+.profilePic{
+    height: auto;
+    width: 70%;
+    border: 8px solid blue;
+    border-radius: 400px;
+    
+
 }

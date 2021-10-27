@@ -10,8 +10,11 @@ mobile px 768px */
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    
 }
 body {
+    
+    padding: 24px;
     background-color: yellow
 }
 .navbar {
@@ -20,18 +23,73 @@ body {
 
 }
 .splash-container {
-    background-color: green;
+    text-transform: uppercase;
+    background-color: magenta;
+    width: 100%;
+    margin: 0px;
+    height: 800px;
     display: flex;
-    flex-basis: 100%;
-    flex-wrap: wrap;
+
 }
+
+.profilePicMain {
+    border: 16px blue solid;
+    border-radius: 360px;
+    
+}
+
 .splash-container .float-left {
     background-color: black;
-    display: inline
+    flex: 8;
+    display: flex;
+    justify-content: flex-start
+    align-items: center;
+    flex-direction: column;
+
+
+
 }
 .splash-container .float-right {
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 6;
 }
+
+.webdevclass,.portfolioclass, .welcomeclass {
+    background-color:;
+    position: relative;
+    top: 200px;
+    right: -70px;
+    margin: 0px;
+    padding:0px;
+}
+
+#welcome{
+    position: relative;
+    top: 130px;
+    font-size: 32px;
+    font-weight: 400;
+    right: -4px;
+    margin: 0;
+}
+#webdev {
+    position: relative;
+    top: -160px;
+    font-size: 32px;
+    font-weight: 800;
+    right: -8px;
+    letter-spacing: 26px;
+
+}
+#portfolio {
+    color: green;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+
 
 h2 {
     text-transform: uppercase;
@@ -46,7 +104,10 @@ h2 {
     flex-wrap: wrap;
 }
 
-
+.content-lower-main{
+    display: flex;
+    flex: 1 0 50%;
+}
 
 
 
@@ -57,6 +118,7 @@ h2 {
 }
 .sidebar p{
     padding: 5px 25px;
+    font-size: 40px;
 }
 .content-main{
     background-color: green;
@@ -76,7 +138,9 @@ margin: 0px;
 .content-lower-main {
     display: flex;
     background-color: black;
-    jus
+    flex-wrap: wrap;
+
+
     
 }
 .article-two {
@@ -105,14 +169,29 @@ margin: 0px;
     padding: 0px;
     border: 8px solid blue;
     align-self: base;
-    max-height: 200px;
+    max-height: 600px;
     min-height: 180px;
-    width: 94%;
+    width: 100%;
+
+    
+}
+
+.image-two  {
+    position: relative;
+    padding: 0px;
+    border: 8px solid blue;
+    align-self: base;
+    max-height: 400px;
+    flex: 1  35%;
+    margin: 10PX;
+    
+   
 }
 
 .article-about {
     text-align: center;
     background-color: yellow;
+    
     
 }
 .profilePic{
@@ -136,6 +215,7 @@ margin: 0px;
     position: relative;
     align-self: center;
     margin: 10px 0
+    font-size: 3rem;
     
 }
 .contact-me ul{
@@ -147,6 +227,7 @@ margin: 0px;
     list-style: none;
     display: flex;
     width: 100%;
+    font-size: 24px;
 }
 .contact-me li{
     background-color: blue;
@@ -159,7 +240,7 @@ margin: 0px;
 
 }
 /* media query kept at bottom due to css parsing order */
-
+/* mobile */
 @media screen and (max-width: 768px) {
     .flex-container {
         flex-direction: column;
@@ -186,6 +267,13 @@ margin: 0px;
         list-style: none;
         flex: 1 0 100%;
         text-align: center;
-        
+    }
+    body {
+        text-align: center;
+    }
+    .flex-container {
+        max-width: 768px;
+        align-self: center;
+    }
 
-}
+/*becomes buggy at min width

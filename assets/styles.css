@@ -58,6 +58,7 @@ nav a:hover {
 
 .innernavcontainer {
     margin: 0px 60px;
+    
 }
 
 .navcontainer {
@@ -302,6 +303,54 @@ margin: 0px;
 }
 /* media query kept at bottom due to css parsing order */
 /* mobile */
+
+
+
+@media screen and (max-width:1312px) {
+    
+    .webdevclass,.portfolioclass, .welcomeclass {
+        transform: translate(0px,10px);
+        transition: 1s ease-out;  
+    }
+    
+}
+
+@media screen and (max-width:1310px) {
+    .profilePicMain {
+         transform: scale(0.8);
+        transition: 1s;    
+    }
+    .profilePicMain {
+        transform: translate(-530px, -120px);
+        transition: 1.5s;    
+   }
+    .webdevclass,.portfolioclass, .welcomeclass {
+        background-color:;
+        position: relative;
+        top: 450px;
+        right: -120px;
+        margin: 0px;
+        padding:0px;
+    }
+    
+}
+
+@media screen and (max-width:940px) {
+
+
+    
+        nav  ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+    }
+    
+}
+
 
 
 

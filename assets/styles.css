@@ -28,18 +28,18 @@ nav  {
 }
 
 nav  ul {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     list-style: none;
 }
 
 nav  li {
     color: var(--color-White);
     display: inline-block;
-    margin-left: 0px 35px;
+    margin: 16px;
     padding-top: 5px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 80px;
 
 }
@@ -47,9 +47,9 @@ nav  li {
 li h2 {
     color: var(--color-White);
     display: inline-block;
-    margin-left: 70px;
+    margin: 16px 32px 0px;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 80px;
 }
 nav a:hover {
@@ -62,6 +62,7 @@ nav a:hover {
 }
 
 .navcontainer {
+    padding-top: 8px;
     width: 100%;
     color: var(--color-White);
     float: right;
@@ -76,7 +77,10 @@ nav a:hover {
 }
 .logo {
     color: var(--color-White);
-    
+    margin:32px 0px;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: 700;
     float: left;
     
 }
@@ -269,6 +273,7 @@ margin: 0px;
     flex-wrap: wrap;
     background-color: var(--color-White);
     margin: 0px;
+   padding-bottom: 32px;   
     justify-content: center;
 }
 .contact-me h2{
@@ -303,8 +308,56 @@ margin: 0px;
 }
 /* media query kept at bottom due to css parsing order */
 /* mobile */
+@media screen and (max-width:1326px) {
+    
+    nav {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navcontainer  {
+        
+    }
+    .navcontainer  {
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .innernavcontainer {
+        
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
 
 
+
+    .navcontainer ul {
+        text-align: center;
+        padding-bottom: 16px;
+        flex: 1 0 33% ;
+       
+       
+    }
+    .navcontainer li {
+        
+        display: flex;
+        margin: 0px;
+        list-style: none;
+        flex: 1 0 33%;
+        text-align: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .innernavcontainer h1 {
+        text-align: center;
+        background-color: rebeccapurple;
+        margin: 5px;
+
+    }
+}
 
 @media screen and (max-width:1312px) {
     
@@ -335,37 +388,20 @@ margin: 0px;
     
 }
 
-@media screen and (max-width:940px) {
-
 
     
-        nav  ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
-    }
-    
-}
 
 
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 908px) {
    
     .flex-container {
         flex-direction: column;
     }
-     .content-main {
-      
-     }
-     .sidebar {
-      
-     }
+    
+
      .profilePic{
          
          width: 40%;

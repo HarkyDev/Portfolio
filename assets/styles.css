@@ -33,6 +33,7 @@ nav  ul {
     list-style: none;
 }
 
+
 nav  li {
     color: var(--color-White);
     display: inline-block;
@@ -52,9 +53,7 @@ li h2 {
     font-size: 30px;
     font-weight: 80px;
 }
-nav a:hover {
- color: black;
-}
+
 
 .innernavcontainer {
     margin: 0px 60px;
@@ -239,13 +238,20 @@ margin: 0px;
     min-height: 180px; 
     max-width: 100%;
     flex: 1 1;
+    position: relative;
    
 }
 .image-one-link {
+    position: relative;
     display: flex;
     flex: 1;
     justify-content: center;
-    
+    align-items: center;
+}
+.span-one{
+    position: absolute;
+    top: 40%;
+    right: 30px;
 }
 
 .image-two-link {
@@ -332,8 +338,46 @@ margin: 0px;
 
 }
 
+.linkbutton:hover {
+    transform: scale(1.05);
+    transition:  400ms;
+} 
+
+
+.item-title{
+    background-color:var(--color-Blue);
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 2% 4%;
+    position: absolute;
+    top: 40%;
+    flex: 0 1 10%;
+    font-size: 20px;
+    color: var(--color-White);
+}
 
 section img:hover {
+    transform: scale(1.04);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section img:hover + .item-title {
     transform: scale(1.04);
     transition: 0.3s;
     cursor: pointer;

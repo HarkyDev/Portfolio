@@ -83,10 +83,7 @@ li h2 {
     float: left;
     
 }
-.navcontainer ul li {
-        
 
-}
 .splash-container {
     text-transform: uppercase;
     background-color: var(--color-White);
@@ -230,7 +227,7 @@ margin: 0px;
 
 
 .image-one  {
-    
+    padding: 0px;
     border: 10px solid var(--color-Blue);
     align-self: base;
     border-radius: 0px;
@@ -485,16 +482,30 @@ section img:hover + .item-title {
     }
     
 }
+@media screen and (max-width: 1100px) {
+.float-left{ 
+    transform: scale(1);
+    transition: 1.5s;
 
-
+} 
     
-
+.webdevclass,.portfolioclass, .welcomeclass{
+    transform: translate(0px);
+    transition: 1.5s; 
+}
+    
+}
 
 
 
 
 @media screen and (max-width: 908px) {
-   
+    .float-left{ 
+        transform: scale(1);
+        transition: 1.5s;
+    
+    } 
+        
     .flex-container {
         flex-direction: column;
     }
@@ -540,5 +551,79 @@ section img:hover + .item-title {
 
 }
 
+@media screen and (max-width: 800px) {
+   
+    .float-left{ 
+        transform: scale(0.8);
+        transition: 1.5s;
+    } 
+    .webdevclass,.portfolioclass, .welcomeclass{
+        transform: translate(-100px);
+        transition: 1.5s; 
+    }
+        
+    .profilePicMain {
+        transform: scale(0.4);
+        transform: translate(-520px,-130px);
+        transition: 1.5s; 
+    }
+       
+    .webdevclass {
+        margin-top: 0px;
+}
 
+}
+
+@media screen and (max-width: 620px) {
+   
+ 
+    .profilePicMain {
+        max-width: 400px;
+        transform: scale(0.3);
+        transform: translate(-570px,-80px);
+        transition: 1.5s; 
+    }
+       
+    .webdevclass {
+        margin-top: 0px;
+}
+.float-left{ 
+    transform: scale(0.5.5);
+    transition: 1.5s;
+
+} 
+    
+.webdevclass,.portfolioclass, .welcomeclass{
+    transform: translate(-130px,30px);
+    transition: 1.5s; 
+   
+
+}
+
+}
+@media screen and (max-width: 500px) {
+   
+ 
+    .profilePicMain {
+        max-width: 300px;
+        border: 10px solid var(--color-Blue);
+        transform: translate(-560px,-140px);
+        transition: 1.5s; 
+    }
+       
+    .webdevclass {
+        margin-top: 0px;
+}
+    .float-left{ 
+        transform: scale(0.7);
+        transition: 1.5s;
+
+    } 
+        
+    .webdevclass,.portfolioclass, .welcomeclass{
+        transform: translate(-230px,-80px);
+        transition: 1.5s; 
+       
+
+}
 /*becomes buggy at min width

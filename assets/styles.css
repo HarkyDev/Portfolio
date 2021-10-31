@@ -13,6 +13,8 @@
 * {
 	font-family: Arial, Helvetica, sans-serif;
 	color: var(--color-Blue);
+	box-sizing: inherit;
+	border:1px;
 }
 body {
 	padding: 24px;
@@ -85,6 +87,11 @@ li h2 {
 	height: 800px;
 	display: flex;
 }
+.article-about {
+	text-align: center;
+	background-color: rgb(255, 255, 255,0.001);
+	border-radius: 300px;
+}
 .profilePicMain {
 	border: 16px solid var(--color-Blue);
 	border-radius: 360px;
@@ -93,24 +100,16 @@ li h2 {
 	background-color: var(--color-White);
 	flex: 1;
 	display: flex;
-	text-align: center;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
-.splash-container .float-right {
-	background-color: rgb(255, 255, 255,0.2);
+.float-right {
+	background-color: rgb(0, 0, 0,0.01);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex: 1;
-}
-.profilePicMain {
-	max-width:
-}
-#welcome,#portfolio,#webdev {
-	font-family: Arial, Helvetica, sans-serif;
-	flex: 0 1;
 }
 #welcome{
 	font-size: 70px;
@@ -124,12 +123,6 @@ li h2 {
 	font-size: 50px;
 }
 /* SECOND PAGE - ABOUT AND PROJECTS SECTION */
-.flex-container h2 {
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 40px;
-	margin-bottom: 10px;
-}
 .flex-container{
 	margin: 80px 80px;
 	margin-bottom: 0px;
@@ -137,6 +130,14 @@ li h2 {
 	background-color: var(--color-White);
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0px;
+	margin:0px;
+}
+.flex-container h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 10px;
 }
 .sidebar{
 	background-color: var(--color-White);
@@ -154,12 +155,14 @@ li h2 {
 .content-main{
 	background-color: var(--color-White);
 	flex: 3;
+	
 }
 .content-lower-main {
 	display: flex;
 	background-color: var(--color-White);
 	flex-wrap: wrap;
 	width: 100%;
+	flex: 0 1;
 }
 .article-one {
 	background-color: var(--color-White);
@@ -215,17 +218,11 @@ li h2 {
 	position: relative;
 	padding: 0px;
 	border: 10px solid var(--color-Blue);
-	border-radius: 0px;
 	max-height: 300px;
 	width: 45%;
 	flex: 1 1 ;
 	margin: 10px;
 	min-width: 320px;
-}
-.article-about {
-	text-align: center;
-	background-color: var(--color-White);
-	flex: 0 1;
 }
 .profilePic{
 	height: auto;
@@ -234,23 +231,23 @@ li h2 {
 	border-radius: 400px;
 }
 .contact-me{
+	
 	display: flex;
 	flex-wrap: wrap;
 	background-color: var(--color-White);
 	margin: 0px;
 	padding-bottom: 32px;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .contact-me h2{
 	text-transform: uppercase;
-	text-align: center;
 	font-size: 40px;
 	margin-bottom: 20px;
 	font-weight: bolder;
 }
 .contact-me ul{
-	position: relative;
-	left: -20px;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0px;
@@ -400,7 +397,52 @@ section img:hover + .item-title {
 		align-items: center;
 		flex-direction: column;
 	}
+	.item-title {
+		transform:scale(0.7);
+		transition: 1s;
+	}
+
+}
+@media screen and (max-width:500px) {
+	.sidebar p{
+		font-size: 20px;
+	}
+	.float-left {
+		margin:  50px 0px 0px 0px;
+		max-height: 100px;
+	}
+	.float-right {
+		margin:  20px 0px 0px 0px;
+		max-height: 300px;
+	}
+
+
+	
+	#welcome {
+		font-size: 21px;
+	}
+	#portfolio {
+		font-size: 33px;
+	}
+	#webdev {
+		font-size: 15px;
+	}
+	.profilePicMain {
+		max-width: 200px;
+	}
+}
+
+@media screen and (max-width:460px) {
+	
+	.image-two {
+	
+		min-width: 140px;
+	}
+	.flex-container {
+		max-width: 100vw;
+	}
 }
 
 /*code reduced from 565 lines to 427*/
 /*code reduced from 427 lines to 403*/
+/*code reduced from 403 lines to 393*/

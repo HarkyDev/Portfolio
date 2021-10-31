@@ -1,566 +1,405 @@
-/* colour variables 
-maybe define border pxs 
-#f5f1e7
-#3d03d1
+/* MY PORTFOLIO PROJECT CSS */
 
-mobile px 768px */
-
-
+/* ROOT (STYLE VARIABLES) */
+/* INTENDED COLOURS FOR USE 
+    --color-White: #f5f1e7; (BACKGROUND AND LETTERING)
+	--color-Blue: #3d03d1;  (BORDER COLOURS,NAV BAR, SPLASH PAGE,ABOUT AND CONTACT TEXT COLOUR)
+*/
 :root {
-    --color-White: #f5f1e7;
-    --color-Blue: #3d03d1;
+	--color-White: #f5f1e7;
+	--color-Blue: #3d03d1;
 }
-
+/* GENERAL STYLES SECTION */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--color-Blue);
-    
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--color-Blue);
 }
 body {
-    padding: 24px;
-    background-color: var(--color-White);
-    margin: 0;
-    padding: 0;
-}
-
-nav  {
-    display: flex;
-    float: right;
-}
-
-nav  ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
-
-nav  li {
-    color: var(--color-White);
-    display: inline-block;
-    margin: 16px;
-    padding-top: 5px;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 80px;
-
-}
-
-li h2 {
-    color: var(--color-White);
-    display: inline-block;
-    margin: 16px 32px 0px;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 80px;
-}
-
-
-.innernavcontainer {
-    margin: 0px 60px;
-    
-}
-
-
-
-.navcontainer {
-    padding-top: 8px;
-    width: 100%;
-    color: var(--color-White);
-    float: right;
-    background-color: var(--color-Blue)
-    
-}
-
-
-
-
-.navcontainer::after {
- content: '';
- display: table;
- clear: both;
-}
-.logo {
-    color: var(--color-White);
-    margin:32px 0px;
-    margin-left: 50px;
-    font-size: 40px;
-    font-weight: 700;
-    float: left;
-    
-}
-.navcontainer ul li {
-        
-
-}
-.splash-container {
-    text-transform: uppercase;
-    background-color: var(--color-White);
-    width: 100%;
-    margin: 0px;
-    height: 800px;
-    display: flex;
-    
-}
-
-.profilePicMain {
-    border: 16px solid var(--color-Blue);
-    border-radius: 360px;
-    
-}
-
-.float-left {
-    background-color: var(--color-White);
-    flex: 1;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
-.splash-container .float-right {
-    background-color: rgb(255, 255, 255,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-
-.profilePicMain {
-    max-width: 
-}
-
-#welcome,#portfolio,#webdev {
-    font-family: Arial, Helvetica, sans-serif;
-    flex: 0 1;  
-}
-#welcome{
-    font-size: 70px;
-    font-weight: lighter;
-
-}
-#portfolio {
-    font-size: 110px;
-    font-weight: bolder;
-
-}
-
-#webdev {
-    font-size: 50px;
-}
-
-
-
-
-.flex-container h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.flex-container{
-    margin: 80px 80px;
-    margin-bottom: 0px;
-    color: var(--color-Blue);
-    background-color: var(--color-White);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.sidebar{
-    background-color: var(--color-White);
-    flex: 1;
-    align-self: baseline;
-    margin: 0 40px;
-}
-.sidebar p{
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    padding: 25px 25px;
-    font-size: 30px;
-    margin: 0px;
-    
-}
-.content-main{
-    background-color: var(--color-White);
-    flex: 3;
-}
-.content-lower-main {
-    display: flex;
-    background-color: var(--color-White);
-    flex-wrap: wrap;
-    width: 100%;
-
-
-    
-}
-.article-one {
-background-color: var(--color-White);
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 10px;
-margin: 0px;
-}
-
-
-.article-two {
-    padding: ;
-    background-color: var(--color-White);
-    display: flex;
-    justify-content: space-around;
-    flex: 1 0 50%;
-    flex-wrap: wrap;
-    }
-
-    /* works but needs a media query to smoothen the padding on either side if I cant centre from "content-lower-main*/
-    /* this code works but is wrong it needs to be reactively spliting the lines when they can not occupy the width needed
-     rather than share 50% all the time*/
-.article-three {
-     background-color: red;
-    display: flex;
-    justify-content: center;
-    padding-right: 30px;
-    flex: 1;    
-        }
-
-
-.image-one  {
-    
-    border: 10px solid var(--color-Blue);
-    align-self: base;
-    border-radius: 0px;
-    max-height: 500px;
-    min-height: 180px; 
-    max-width: 100%;
-    flex: 1 1;
-    position: relative;
-   
-}
-.image-one-link {
-    position: relative;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-.span-one{
-    position: absolute;
-    top: 40%;
-    right: 30px;
-}
-
-.image-two-link {
-    position: relative;
-    display: flex;
-    margin: 0px;
-    flex: 1 0 33%;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-
-
-
-
-.image-two  {
-    position: relative;
-    padding: 0px;
-    border: 10px solid var(--color-Blue);
-    border-radius: 0px;
-    max-height: 300px;
-    width: 45%;
-    flex:  1 1  ;
-    margin: 10px;
-    min-width: 320px;
-}
-
-.article-about {
-    text-align: center;
-    background-color: var(--color-White);
-    flex: 0 1;
-    
-    
-}
-.profilePic{
-    height: auto;
-    width: 70%;
-    border: 16px solid var(--color-Blue);
-    border-radius: 400px;
-    
-}
-
-.contact-me{
-    
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--color-White);
-    margin: 0px;
-   padding-bottom: 32px;   
-    justify-content: center;
-}
-.contact-me h2{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-    font-weight: bolder;
-
-    
-}
-.contact-me ul{
-    position: relative;
-    left: -20px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px;
-    list-style: none;
-    display: flex;
-    width: 100%;
-    font-size: 24px;
-}
-.contact-me li{
-    background-color: var(--color-White);
-    margin: 3px;
-    list-style: none;
-    flex: 1 0 33%;
-    text-align: center;
-    
-
-
-}
-
-.linkbutton:hover {
-    transform: scale(1.05);
-    transition:  400ms;
-} 
-
-
-.item-title{
-    letter-spacing: 2px;
-    background-color:var(--color-Blue);
-    text-transform: uppercase;
-    font-weight:bold;
-    padding: 1% 4%;
-    position: absolute;
-    top: 40%;
-    flex: 0 1 10%;
-    font-size: 20px;
-    color: var(--color-White);
-}
-
-section img:hover {
-    transform: scale(1.04);
-    transition: 0.3s;
-    cursor: pointer;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section img:hover + .item-title {
-    transform: scale(1.04);
-    transition: 0.3s;
-    cursor: pointer;
-
-}
-
-
-
-/*@media screen and (max-width:900px) {
-    #welcome { 
-        font-size: 24.5px;
-    }
-    #portfolio {
-        font-size: 38.5px;
-    }
-    #webdev {
-        font-size: 17.5px;
-    }
-    .profilePicMain {
-    max-width: 100px;
-    }
-}
-*/
-
-
-@media screen and (max-width:1150px) {
-    #welcome { 
-        font-size: 45.5px;
-    }
-    #portfolio {
-        font-size: 71.5px;
-    }
-    #webdev {
-        font-size: 32.5px;
-    }
-    .profilePicMain {
-    max-width: 300px;
-    }
-}
-
-@media screen and (max-width:660px) {
-  
-    .float-left {
-    background-color: var(--color-White);
-    flex: 1;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    }
-}
-
-/* media query kept at bottom due to css parsing order */
-/* mobile */
-@media screen and (max-width:1326px) {
-    .image-one {
-        min-width: 88%;
-    }
-}
-
-
-
-
-
-
-@media screen and (max-width:1326px) {
-    .profilePic {
-        border: 8px solid var(--color-Blue);
-        transition: 1s;
-    }
-    
-    nav {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .navcontainer  {
-        flex-direction: column;
-    }
-    .navcontainer  {
-        display: flex;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-    }
-    .innernavcontainer {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-    }
-
-
-
-    .navcontainer ul {
-        text-align: center;
-        padding-bottom: 16px;
-        flex: 1 0 33% ;
-    }
-    .navcontainer li {
-        display: flex;
-        margin: 0px;
-        list-style: none;
-        flex: 1 0 33%;
-        text-align: center;
-        text-align: center;
-        justify-content: center;
-    }
-    .innernavcontainer h1 {
-        text-align: center;
-        background-color: var(--color-Blue);
-        margin: 4px 0px 2px 0px;
-
-    }
-}
-
-
-    
-
-
-
-
-    
-
-
-@media screen and (max-width: 800px) {
-    .splash-container{
-        flex-direction: column;
-        flex-orde;
-        
-    }
-    .profilePicMain {
-        max-width: 333px ;
-    }
-}
-
-
-@media screen and (max-width: 908px) {
-   
-    .flex-container {
-        flex-direction: column;
-    }
-    
-
-     .profilePic{
-         
-         width: 40%;
-         border: 8px solid var(--color-Blue);
-         border-radius: 400px;
-    }
-    .contact-me {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .contact-me li{
-    
-        margin: 3px;
-        list-style: none;
-        flex: 1 0 100%;
-        text-align: center;
-    }
-    body {
-        
-    }
-    .flex-container {
-        max-width: 768px;
-        align-self: center;
-    }
-    
-
+	padding: 24px;
+	background-color: var(--color-White);
+	margin: 0;
+	padding: 0;
 }
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
-     font-family: Arial, Helvetica, sans-serif;
- }
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* NAVIGATION BAR SECTION */
+nav {
+	display: flex;
+	float: right;
+}
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+nav li {
+	color: var(--color-White);
+	display: inline-block;
+	margin: 16px;
+	padding-top: 5px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 80px;
+}
+li h2 {
+	color: var(--color-White);
+	display: inline-block;
+	margin: 16px 32px 0px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 80px;
+}
+.innernavcontainer {
+	margin: 0px 60px;
+}
+.navcontainer {
+	padding-top: 8px;
+	width: 100%;
+	color: var(--color-White);
+	float: right;
+	background-color: var(--color-Blue)
+}
+.navcontainer::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.logo {
+	color: var(--color-White);
+	margin:32px 0px;
+	margin-left: 50px;
+	font-size: 40px;
+	font-weight: 700;
+	float: left;
+}
+/* WELCOME PAGE/SPLASH PAGE SECTION */
+.splash-container {
+	text-transform: uppercase;
+	background-color: var(--color-White);
+	width: 100%;
+	margin: 0px;
+	height: 800px;
+	display: flex;
+}
+.profilePicMain {
+	border: 16px solid var(--color-Blue);
+	border-radius: 360px;
+}
+.float-left {
+	background-color: var(--color-White);
+	flex: 1;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.splash-container .float-right {
+	background-color: rgb(255, 255, 255,0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+.profilePicMain {
+	max-width:
+}
+#welcome,#portfolio,#webdev {
+	font-family: Arial, Helvetica, sans-serif;
+	flex: 0 1;
+}
+#welcome{
+	font-size: 70px;
+	font-weight: lighter;
+}
+#portfolio {
+	font-size: 110px;
+	font-weight: bolder;
+}
+#webdev {
+	font-size: 50px;
+}
+/* SECOND PAGE - ABOUT AND PROJECTS SECTION */
+.flex-container h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.flex-container{
+	margin: 80px 80px;
+	margin-bottom: 0px;
+	color: var(--color-Blue);
+	background-color: var(--color-White);
+	display: flex;
+	flex-wrap: wrap;
+}
+.sidebar{
+	background-color: var(--color-White);
+	flex: 1;
+	align-self: baseline;
+	margin: 0 40px;
+}
+.sidebar p{
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 20px;
+	padding: 25px 25px;
+	font-size: 30px;
+	margin: 0px;
+}
+.content-main{
+	background-color: var(--color-White);
+	flex: 3;
+}
+.content-lower-main {
+	display: flex;
+	background-color: var(--color-White);
+	flex-wrap: wrap;
+	width: 100%;
+}
+.article-one {
+	background-color: var(--color-White);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	margin: 0px;
+}
+.article-two {
+	padding: ;
+	background-color: var(--color-White);
+	display: flex;
+	justify-content: space-around;
+	flex: 1 0 50%;
+	flex-wrap: wrap;
+}
+.image-one {
+	border: 10px solid var(--color-Blue);
+	align-self: base;
+	border-radius: 0px;
+	max-height: 500px;
+	min-height: 180px;
+	max-width: 100%;
+	flex: 1 1;
+	position: relative;
+}
+.image-one-link {
+	position: relative;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+.image-two-link {
+	position: relative;
+	display: flex;
+	margin: 0px;
+	flex: 1 0 33%;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	position: relative;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+.image-two {
+	position: relative;
+	padding: 0px;
+	border: 10px solid var(--color-Blue);
+	border-radius: 0px;
+	max-height: 300px;
+	width: 45%;
+	flex: 1 1 ;
+	margin: 10px;
+	min-width: 320px;
+}
+.article-about {
+	text-align: center;
+	background-color: var(--color-White);
+	flex: 0 1;
+}
+.profilePic{
+	height: auto;
+	width: 70%;
+	border: 16px solid var(--color-Blue);
+	border-radius: 400px;
+}
+.contact-me{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--color-White);
+	margin: 0px;
+	padding-bottom: 32px;
+	justify-content: center;
+}
+.contact-me h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-weight: bolder;
+}
+.contact-me ul{
+	position: relative;
+	left: -20px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px;
+	list-style: none;
+	display: flex;
+	width: 100%;
+	font-size: 24px;
+}
+.contact-me li{
+	background-color: var(--color-White);
+	margin: 3px;
+	list-style: none;
+	flex: 1 0 33%;
+	text-align: center;
+}
+.linkbutton:hover {
+	transform: scale(1.05);
+	transition: 400ms;
+}
+.item-title{
+	letter-spacing: 2px;
+	background-color:var(--color-Blue);
+	text-transform: uppercase;
+	font-weight:bold;
+	padding: 1% 4%;
+	position: absolute;
+	top: 40%;
+	flex: 0 1 10%;
+	font-size: 20px;
+	color: var(--color-White);
+}
+/* :HOVER ELEMENTS SECTION */
+section img:hover {
+	transform: scale(1.04);
+	transition: 0.3s;
+	cursor: pointer;
+}
+section img:hover + .item-title {
+	transform: scale(1.04);
+	transition: 0.3s;
+	cursor: pointer;
+}
+/* MEDIA QUERIES. ORDERED FROM "LARGEST PIXEL WIDTH" TO "LOWEST PIXEL WIDTH" SECTION */
+@media screen and (max-width:1326px) {
+	.profilePic {
+		border: 8px solid var(--color-Blue);
+		transition: 1s;
+	}
+	nav {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.navcontainer {
+		flex-direction: column;
+	}
+	.navcontainer {
+		display: flex;
+		height: auto;
+		align-items: center;
+		justify-content: center;
+	}
+	.innernavcontainer {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+	.navcontainer ul {
+		text-align: center;
+		padding-bottom: 16px;
+		flex: 1 0 33% ;
+	}
+	.navcontainer li {
+		display: flex;
+		margin: 0px;
+		list-style: none;
+		flex: 1 0 33%;
+		text-align: center;
+		text-align: center;
+		justify-content: center;
+	}
+	.innernavcontainer h1 {
+		text-align: center;
+		background-color: var(--color-Blue);
+		margin: 4px 0px 2px 0px;
+	}
+    .image-one {
+		min-width: 88%;
+	}
+}
+@media screen and (max-width:1150px) {
+	#welcome {
+		font-size: 45.5px;
+	}
+	#portfolio {
+		font-size: 71.5px;
+	}
+	#webdev {
+		font-size: 32.5px;
+	}
+	.profilePicMain {
+		max-width: 300px;
+	}
+}
+@media screen and (max-width: 908px) {
+	.flex-container {
+		flex-direction: column;
+	}
+	.profilePic{
+		width: 40%;
+		border: 8px solid var(--color-Blue);
+		border-radius: 400px;
+	}
+	.contact-me {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.contact-me li{
+		margin: 3px;
+		list-style: none;
+		flex: 1 0 100%;
+		text-align: center;
+	}
+	body {
+	}
+	.flex-container {
+		max-width: 768px;
+		align-self: center;
+	}
+}
+@media screen and (max-width: 800px) {
+	.splash-container{
+		flex-direction: column;
+		flex-orde;
+	}
+	.profilePicMain {
+		max-width: 333px ;
+	}
+}
+@media screen and (max-width:660px) {
+	.float-left {
+		background-color: var(--color-White);
+		flex: 1;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+}
 
-/*becomes buggy at min width
+/*code reduced from 565 lines to 427*/

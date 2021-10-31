@@ -133,9 +133,12 @@ li h2 {
 
 #welcome,#portfolio,#webdev {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
     flex: 0 1;  
-    font-weight: lighter;  
+}
+#welcome{
+    font-size: 70px;
+    font-weight: lighter;
+
 }
 #portfolio {
     font-size: 110px;
@@ -143,7 +146,7 @@ li h2 {
 
 }
 
-#wwebdev {
+#webdev {
     font-size: 50px;
 }
 
@@ -386,40 +389,42 @@ section img:hover + .item-title {
 
 }
 
-@media screen and (max-width:1010px) {
-#welcome,#portfolio,#webdev {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    flex: 0 1;  
-    font-weight: lighter;  
-}
-#portfolio {
-    font-size: 40px;
-    font-weight: bolder;
 
-}
 
-#wwebdev {
-    font-size: 25px;
+/*@media screen and (max-width:900px) {
+    #welcome { 
+        font-size: 24.5px;
+    }
+    #portfolio {
+        font-size: 38.5px;
+    }
+    #webdev {
+        font-size: 17.5px;
+    }
+    .profilePicMain {
+    max-width: 100px;
+    }
 }
+*/
+
+
+@media screen and (max-width:1150px) {
+    #welcome { 
+        font-size: 45.5px;
+    }
+    #portfolio {
+        font-size: 71.5px;
+    }
+    #webdev {
+        font-size: 32.5px;
+    }
+    .profilePicMain {
+    max-width: 300px;
+    }
 }
 
 @media screen and (max-width:660px) {
-    #welcome,#portfolio,#webdev {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        flex: 0 1;  
-        font-weight: lighter;  
-    }
-    #portfolio {
-        font-size: 30px;
-        font-weight: bolder;
-    
-    }
-    
-    #wwebdev {
-        font-size: 5px;
-    }
+  
     .float-left {
     background-color: var(--color-White);
     flex: 1;
@@ -430,6 +435,7 @@ section img:hover + .item-title {
     flex-direction: column;
 
     }
+}
 
 /* media query kept at bottom due to css parsing order */
 /* mobile */
@@ -439,13 +445,7 @@ section img:hover + .item-title {
     }
 }
 
-@media screen and (max-width:1126px) {
-    .profilePicMain {
-        max-width: 333px ;
-       
-    }
-    
-}
+
 
 
 
@@ -472,7 +472,6 @@ section img:hover + .item-title {
         justify-content: center;
     }
     .innernavcontainer {
-        
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -484,11 +483,8 @@ section img:hover + .item-title {
         text-align: center;
         padding-bottom: 16px;
         flex: 1 0 33% ;
-       
-       
     }
     .navcontainer li {
-        
         display: flex;
         margin: 0px;
         list-style: none;
@@ -514,7 +510,7 @@ section img:hover + .item-title {
     
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .splash-container{
         flex-direction: column;
         flex-orde;

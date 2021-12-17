@@ -255,12 +255,13 @@ li h2 {
 	display: flex;
 	width: 100%;
 	font-size: 24px;
+	justify-content: center
 }
 .contact-me li{
 	background-color: var(--color-White);
-	margin: 3px;
+	margin-right: 10vw;
+	margin-left: 10vw;
 	list-style: none;
-	flex: 1 0 33%;
 	text-align: center;
 }
 .linkbutton:hover {

@@ -88,6 +88,8 @@ li h2 {
 	display: flex;
 }
 .article-about {
+	display: flex;
+	justify-content: center;
 	text-align: center;
 	background-color: rgb(255, 255, 255,0.001);
 	border-radius: 300px;
@@ -457,3 +459,24 @@ section img:hover + .item-title {
 /*code reduced from 565 lines to 427*/
 /*code reduced from 427 lines to 403*/
 /*code reduced from 403 lines to 393*/
+
+*{
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactList  li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactList  svg{
+	margin-right: 4px;
+	display: flex
+}

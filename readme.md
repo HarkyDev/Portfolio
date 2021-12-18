@@ -27,6 +27,7 @@ To demonstrate the functionality of the website I have given the cards links tha
 - css
 - html5
 - Bootstraps SVGs
+-tailwind(button)
 - Git & GitHub Pages 
 ## Licenses
 MIT License

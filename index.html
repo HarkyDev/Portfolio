@@ -61,8 +61,8 @@
             alt="Picture of me in Washington DC"
           />
         </article>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur laudantium repudiandae illo expedita, quis animi similique officiis corporis amet!
+        <p class="aboutPara">
+          I'm a Web Developer living and operating from Manchester(UK), I'm also currently studying through Manchester University in Full Stack Development
         </p>
         <a href="./Files/Resume.pdf" target="_blank">
           <button class="bg-indigo-700 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full">
@@ -73,97 +73,145 @@
       </aside>
 
       <section class="content-main">
-        <h2 id="my-project">My Projects</h2>
-        <article class="article-one">
-          <a
-            class="image-one-link"
-            href="https://github.com/HarkyDev/FindMyFootballApp"
-          >
-            <img
-              class="image-one"
-              src="https://i.gyazo.com/97d233e33e1140aa16fffddf0e52f09b.jpg"
-              alt="Image of FindMyFootballApp Project"
-            />
 
-            <p class="item-title">Find my football</p>
-          </a>
-        </article>
-        <!--1st section start of double cards-->
-        <article class="article-two">
-          <a
-            class="image-two-link"
-            href="https://github.com/HarkyDev/Portfolio"
-          >
-            <img
-              class="image-two"
-              src="https://i.gyazo.com/037fa056e7f60307002715a483036d54.png"
-              alt="Image of my portfolio project"
-            />
-            <p class="item-title">portfolio</p>
-          </a>
-          <a
-            class="image-two-link"
-            href="https://github.com/HarkyDev/WeatherWebApp"
-          >
-            <img
-              class="image-two"
-              src="https://i.gyazo.com/dfdd5847ca869f104b3cdbb77f2191fd.png"
-              alt="screenshot of weatherapp"
-            />
-            <p class="item-title">WeatherApp</p>
-          </a>
-        </article>
-        <!--1st section end of double cards-->
-        <!--2nd section start of double cards-->
-        <article class="article-two">
-          <a
-            class="image-two-link"
-            href="https://github.com/HarkyDev/WorkDayPlanner"
-          >
-            <img
-              class="image-two"
-              src="https://i.gyazo.com/9a50535fcb32a00dc955c4ec4937407d.png"
-              alt="screenshot of WorkDayPlanner"
-            />
+      <div class="cardContainer">
 
-            <p class="item-title">WorkDayPlanner</p>
-          </a>
 
-          <a class="image-two-link" href="https://www.freecodecamp.org/">
-            <img
-              class="image-two"
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--lfMhrPQM--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/rphqzfoh2cbz3zj8m8t1.png"
-              alt="The Free Code Bootcamp Logo"
-            />
-            <p class="item-title">freecodecamp</p>
-          </a>
-        </article>
-        <!--2nd section end of double cards-->
-        <!--3rd section start of double cards-->
-        <article class="article-two">
-          <a
-            class="image-two-link"
-            href="https://www.youtube.com/watch?v=IJ6EgdiI_wU>"
-          >
-            <img
-              class="image-two"
-              src="https://miro.medium.com/max/1400/1*BPSx-c--z6r7tY29L19ukQ.png"
-              alt="Illustration of a compute with JS on it connecting to other devices"
-            />
+<!-- start of card  -->
+        <div class="projectCard">
+            <p class="projectTitle">LEGOGRAM</p>
+            <p class="projectDesc">
+             front and back end lego based instagram clone using MySql to handle the database and deployed on heroku with hidden .env files. Fully working CRUD system in place for managing users,posts and comments
+            </p>
+          <div class="buttons">
+            <a href="https://github.com/HarkyDev/Leg-it"> 
+          <button class="gitButton">GitHub</button>
+        </a>
+        <a href=""> 
+          <button class="liveButton">Live</button>
+        </a>
+            <div class="imgContainer">
+            </div>       
+        </div>
+        </div>
+<!-- end of card  -->
 
-            <p class="item-title"> Javascript</p>
-          </a>
+<!-- start of card  -->
+<div class="projectCard">
+  <p class="projectTitle">Express note taker</p>
+  <p class="projectDesc">
+    Note taker based on express using CRUD to write and read to to a remote server 
+  </p>
+<div class="buttons">
+  <a href="https://github.com/HarkyDev/ExpressNoteTaker"> 
+<button class="gitButton">GitHub</button>
+</a>
+<a href="https://eh-note-taker.herokuapp.com/"> 
+<button class="liveButton">Live</button>
+</a>
+  <div class="imgContainer">
+  </div>       
+</div>
+</div>
+<!-- end of card  -->
 
-          <a class="image-two-link" href="https://www.stackoverflow.com/">
-            <img
-              class="image-two"
-              src="https://content.presspage.com/uploads/2658/c800_logo-stackoverflow-square.jpg?98978"
-              alt="The Stack Overflow logo"
-            />
-            <p class="item-title">stackoverflow</p>
-          </a>
-        </article>
-        <!--3rd section end of double cards-->
+<!-- start of card  -->
+<div class="projectCard">
+  <p class="projectTitle">Find My football</p>
+  <p class="projectDesc">
+    API based project to demonstrate practical use of api manipulation. App is designed to give basic information on world football teams and uses multiple APIS to gather the information and then handled through JS to be presented in the frontend.
+  </p>
+<div class="buttons">
+  <a href="https://github.com/HarkyDev/FindMyFootballApp"> 
+<button class="gitButton">GitHub</button>
+</a>
+<a href=""> 
+<button class="liveButton">Live</button>
+</a>
+  <div class="imgContainer">
+  </div>       
+</div>
+</div>
+<!-- end of card  -->
+
+<!-- start of card  -->
+<div class="projectCard">
+  <p class="projectTitle">weather app</p>
+  <p class="projectDesc">
+    Weather app using a public and open API to render weather data based on users input in the search bar.
+  </p>
+<div class="buttons">
+  <a href="https://github.com/HarkyDev/WeatherWebApp"> 
+<button class="gitButton">Git</button>
+</a>
+<a href=""> 
+<button class="liveButton">Live</button>
+</a>
+  <div class="imgContainer">
+  </div>       
+</div>
+</div>
+<!-- end of card  -->
+
+<!-- start of card  -->
+<div class="projectCard">
+  <p class="projectTitle">Portfolio</p>
+  <p class="projectDesc">
+    My own personal portfolio set up early in my work.
+  </p>
+<div class="buttons">
+  <a href="https://github.com/HarkyDev/Portfolio"> 
+<button class="gitButton">GitHub</button>
+</a>
+<a href=""> 
+<button class="liveButton">Live</button>
+</a>
+  <div class="imgContainer">
+  </div>       
+</div>
+</div>
+<!-- end of card  -->
+
+<!-- start of card  -->
+<div class="projectCard">
+  <p class="projectTitle">E-commerce Client</p>
+  <p class="projectDesc">
+    This project was built to demonstrate how I could repair already given code into a working database hosted on a server(express) and have it be manageable using url requests.
+  </p>
+<div class="buttons">
+  <a href="https://github.com/HarkyDev/E-Commerce-Client"> 
+<button class="gitButton">GitHub</button>
+</a>
+<a href=""> 
+<button class="liveButton">Live</button>
+</a>
+  <div class="imgContainer">
+  </div>       
+</div>
+</div>
+<!-- end of card  -->
+
+<!-- start of card  -->
+<div class="projectCard">
+  <p class="projectTitle">SQL Team builder</p>
+  <p class="projectDesc">
+    This project is designed to create database that allows a user to add and or view mulitple fields, entries and users to a table using node. The User can go through a menu that will allow them to select said options and then user and run multiple commands to execute these options
+  </p>
+<div class="buttons">
+  <a href="https://github.com/HarkyDev/SQL-TeamBuilder"> 
+<button class="gitButton">GitHub</button>
+</a>
+<a href=""> 
+<button class="liveButton">Live</button>
+</a>
+  <div class="imgContainer">
+  </div>       
+</div>
+</div>
+<!-- end of card  -->
+
+        
+</div>
       </section>
     </main>
     <!--SECOND PAGE/ABOUT AND PROJECT SECTION START-->
